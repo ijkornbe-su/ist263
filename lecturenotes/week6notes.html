@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 CSS Intro</title>
+        <!-- this is an embedded style sheet -->
+        <style>
+            /* Below we have a grouped selector */
+            p, ul {
+                color:midnightblue;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-decoration: underline;
+            }
+            /* descendent selector */
+            p a {
+                color:darkgreen;
+            }
+            #firstparagraph {
+                color:blueviolet;
+            }
+            .pinktext {
+                color:hotpink
+            }
+            a {
+                text-decoration:none;
+                color:dodgerblue;
+            }
+        </style>
+
+</head>
+<body>
+    <a href="http://wwww.amazon.com">Amazon</a>
+    <!-- id values must be unique -->
+    <p id="firstparagraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="http://google.com"> Google </a>Asperiores commodi accusamus, atque veritatis vitae nostrum voluptas sit exercitationem ex officia? Consequatur nihil non cupiditate delectus optio quia quam maxime soluta.
+    </p>
+    <ul>
+        <li>Pink</li>
+        <li class="pinktext">Blue</li>
+    </ul>
+    
+    <p>
+        I am excited that it is almost Halloween!
+    </p>
+   
+    <p class="pinktext">
+        I am going to be a princess.
+    </p>
+</body>
+</html>

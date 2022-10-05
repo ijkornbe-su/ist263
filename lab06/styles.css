@@ -1,0 +1,11 @@
+h1,h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkmagenta;
+}
+.evenrow {background-color:lightgrey;}
+h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkmagenta;
+    font-size:3.5em;}
+h2 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkmagenta;
+    font-size:2em;}
