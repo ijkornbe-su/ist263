@@ -1,0 +1,21 @@
+a:visited {
+    color:#db0b88;
+}
+
+a:hover {
+    color:#a8407f;
+}
+
+body{
+    background-color:#f5ebf1;
+    background-image: url("../images/teddybear-ist.png");
+    background-repeat:no-repeat;
+}
+p{
+    background-color:#f5ebf1;
+}
+.secondp {
+    border: 2px solid #a8407f;
+    margin: 20px;
+    padding: 15px;
+}
