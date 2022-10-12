@@ -6,6 +6,10 @@ a:hover {
     color:#6fa7bf;
 }
 
+a:link {
+    color: #290340;
+}
+
 body{
     background-color:#f5ebf1;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
