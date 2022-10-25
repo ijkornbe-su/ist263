@@ -1,0 +1,36 @@
+a:visited {
+    color:#b807a6;
+}
+
+a:hover {
+    color:#6fa7bf;
+}
+
+a:link {
+    color: #290340;
+}
+
+body{
+    background-color:#f5ebf1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #071033;
+    
+}
+h1,h2 {
+    color: #7a075e;
+}
+p{
+    background-color:#f5ebf1;
+    color:#0a2a38;
+}
+nav {
+    background-color: #e6aadf;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {
+    color:#e7dded;
+}
+nav a:hover {
+    background-color:#ac6fd1;
+}
