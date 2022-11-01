@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../lab07/styles.css">
+    <style>
+       .div1, .div2{ 
+        display: flex;
+        margin: 30px;
+        padding: 10px;
+        flex-wrap: wrap;
+       }
+       .contact {
+        margin: 30px;
+       }
+       .addy {
+        flex:3;
+        margin-right: 200px ;
+       }
+       .div1, .div2, .addy, .mailto, .linkedin, .form2 {
+        background-color:#e6e6e6; border-radius: 1em;
+       }
+       .affil {
+        background-color: #e6e6e6;
+       }
+.addy {
+    flex: 3;
+}
+
+       .form2 {
+        margin-right: 150px ;
+       }
+       
+       </style>
+</head>
+<body>
+    <nav>
+        <a href="https://ijkornbe-su.github.io/ist263/lab08/index.html">Home</span>|</span></a>
+        <a href="https://ijkornbe-su.github.io/ist263/lab08/skills.html">Skills</span>|</span></a>
+        <a href="https://ijkornbe-su.github.io/ist263/lab08/contact.html">Contact</a>
+    
+    </nav>
+    <h1 class="contact">Contact</h1>
+ 
+    <div class="div1">
+        <div> 
+            <h2>Address</h2>
+            <p class="addy">
+                Belle Kornberg
+                <br>343 Hinds Hall
+                <br>Syracuse, NY 13244
+            </p>
+        </div>
+
+        <div>
+            <p class="mailto">
+            <a href="mailto:ijkornbe@syr.edu" class="email">Belle Kornberg Email</a>
+           </p>
+       
+           <p class="linkedin">
+            <a href="https://www.linkedin.com/in/bellekornberg" class="linkedinlogo"><img src="../images/logo-resized.png" alt="My LinkedIn Profile"></a><a href="https://www.linkedin.com/in/bellekornberg" class="linkedin">My LinkedIn Profile</a>
+           </p>
+       </div>
+
+    </div>
+
+    <div class="div2">
+        <div class="form2">
+            <h2>Contact Belle Kornberg</h2>
+        <br>
+            <form action="https://formspree.io/f/xqkjpong" method="post" class=".form">
+            
+                    <label for="name"><strong>Enter Full Name:</strong></label>
+                    <input type="text" id="name" name="fullname"><br>
+                <br>
+                    <p class="affil"><strong>What is your affiliation?</strong></p>
+                    <input type="radio" id="friend1" name="affiliation" value="client" checked>
+                    <label for="friend1">Friend</label>
+            
+                    <input type="radio" id="friend2" name="affiliation" value="client">
+                    <label for="friend2">Client</label>
+            
+                    <input type="radio" id="friend3" name="affiliation" value="client">
+                    <label for="friend3">Prospective Client</label><br>
+            <br>
+                    <label for="email"><strong>Enter Email and/or Phone Number:</strong></label>
+                    <input type="text" id="email" name="phone_or_email"><br>
+            <br>
+                    <label for="inquires"><strong>What are you inquiring about?</strong></label>
+                    <textarea id="inquires" name="inquires"></textarea><br>
+            <br>
+                    <input type="submit" value="submit form">
+                </form>
+            </div>
+
+          
+        <div class="map">
+             <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1523514154987!2d-76.1355620494741!3d43.03822589989456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca155555%3A0xc1c69e4f641652c1!2sSyracuse%20University%20School%20of%20Information%20Studies%20(iSchool)!5e0!3m2!1sen!2sus!4v1663088915712!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        </p>
+    </div>
+
+    </div>
+        
+    </body>
+    </html>
+    
