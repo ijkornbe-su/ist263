@@ -35,10 +35,10 @@ nav a:hover {
     background-color:#ac6fd1;
 }
 
-@media only screen and (width: 844px) 
+@media only screen and (width: 720px) 
 {
     nav a{
         width:100%;
-        max-width:100%;
-        display:block}
+        display:block;
+    flex-wrap:wrap}
 }
