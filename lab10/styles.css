@@ -35,10 +35,17 @@ nav a:hover {
     background-color:#ac6fd1;
 }
 
-@media only screen and (width: 720px) 
+@media only screen and (max-width: 844px) 
 {
     nav a{
-        width:100%;
+        width: 100%;
         display:block;
-    flex-wrap:wrap}
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 844px) 
+{
+    span{
+        display:none;
+    }
 }
