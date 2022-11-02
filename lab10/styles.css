@@ -40,7 +40,7 @@ nav a:hover {
     nav a{
         width: 100%;
         display:block;
-        justify-content: center;
+        padding: 10px;
     }
 }
 @media only screen and (max-width: 844px) 
