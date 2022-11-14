@@ -1,0 +1,62 @@
+a:visited {
+    color:#0e0852;
+}
+
+a:hover {
+    color:#878dc2;
+}
+
+a:link {
+    color: #290340;
+}
+
+body{
+    background-color:#f5ebf1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #071033;
+    
+}
+h1,h2 {
+    color: #750f5b;
+}
+p{
+    background-color:#f5ebf1;
+    color:#0a2a38;
+}
+nav {
+    background-color: #2a0079;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {
+    color:#e7dded;
+}
+nav a:hover {
+    background-color:#ac6fd1;
+}
+
+@media only screen and (max-width: 844px) 
+{
+    nav a{
+        width: 100%;
+        display:block;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 844px) 
+{
+    span{
+        display:none;
+    }
+}
+
+.img1 {width:100%;}
+@media only screen and (max-width: 100%) 
+    {
+        .img1 {max-width:100%;}
+    }
+
+    body {
+        font-size: 2em;
+    }
+  

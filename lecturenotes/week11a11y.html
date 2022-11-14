@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 A11y</title>
+    <style>
+        #skip {
+            background-color:#dbdbdb;
+            border: 1px solid #000000;
+            padding: 2px;
+            position: absolute; /* out of page flow for layout*/
+            left: -999px;
+        }
+        #skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ID is to uniquely identify a specific of a page, use # for styling-->
+    <a id="skip" tabindex="1" href="#content">Skip to Content</a><br>
+<br> <!-- # sign in href means bookmark ^^^ link-->
+    <a href="http://www.syr.edu" tabindex="2">SU</a><br>
+    <a href="http://www.amazon.com" tabindex="3">Amazon</a><br>
+    <a href="http://www.google.com" tabindex="4">Google</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta mollitia, officiis earum accusantium libero ex tempore est. Aliquid eveniet odit accusantium culpa quas! Vero, iste nisi veniam ducimus inventore neque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta mollitia, officiis earum accusantium libero ex tempore est. Aliquid eveniet odit accusantium culpa quas! Vero, iste nisi veniam ducimus inventore neque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta mollitia, officiis earum accusantium libero ex tempore est. Aliquid eveniet odit accusantium culpa quas! Vero, iste nisi veniam ducimus inventore neque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta mollitia, officiis earum accusantium libero ex tempore est. Aliquid eveniet odit accusantium culpa quas! Vero, iste nisi veniam ducimus inventore neque.</p>
+    <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta mollitia, officiis earum accusantium libero ex tempore est. Aliquid eveniet odit accusantium culpa quas! Vero, iste nisi veniam ducimus inventore neque.</p>
+    <!-- this is part of our bookmark link -->
+</body>
+</html>

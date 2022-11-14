@@ -15,60 +15,68 @@
        .contact {
         margin: 30px;
        }
-       .addy {
+       .add {
         flex:3;
-        margin-right: 200px ;
        }
-       .div1, .div2, .addy, .mailto, .linkedin, .form2 {
+       .col2 {
+        margin-right: 500px;
+       }
+       .div1, .div2 {
         background-color:#e6e6e6; border-radius: 1em;
        }
-       .affil {
-        background-color: #e6e6e6;
-       }
-.addy {
-    flex: 3;
-}
-.div2{
-    flex-wrap:wrap;
-}
+       
        .form2 {
         margin-right: 150px ;
        }
        
+.div2 {
+    flex-wrap:wrap;
+}
+       
+#skip {
+        background-color:#dbdbdb;
+        border: 1px solid #000000;
+        padding: 2px;
+        position: absolute; /* out of page flow for layout*/
+        left: -999px;
+    }
+    #skip:focus {
+        left: 10px;
+    }
        </style>
 </head>
 <body>
+    <a id="skip" tabindex="1" href="#content">Skip to Content</a>
     <nav>
-        <a href="https://ijkornbe-su.github.io/ist263/lab10/index.html">Home</span>|</span></a>
-        <a href="https://ijkornbe-su.github.io/ist263/lab10/skills.html">Skills</span>|</span></a>
+        <a href="https://ijkornbe-su.github.io/ist263/lab10/index.html">Home <span>|</span> </a>
+        <a href="https://ijkornbe-su.github.io/ist263/lab10/skills.html">Skills <span>|</span> </a>
         <a href="https://ijkornbe-su.github.io/ist263/lab10/contact.html">Contact</a>
     
     </nav>
     
+   
+<article>
     <h1 class="contact">Contact</h1>
  
     <div class="div1">
-        <div class="col1"> 
-            <h2>Address</h2>
-            <p class="addy">
+        <div class="add"> 
+            <h2 id="content">Address</h2>
                 Belle Kornberg
                 <br>343 Hinds Hall
                 <br>Syracuse, NY 13244
-            </p>
         </div>
 
         <div class="col2">
-            <p class="mailto">
-            <a href="mailto:ijkornbe@syr.edu" class="email">Belle Kornberg Email</a>
-           </p>
-       
-           <p class="linkedin">
-            <a href="https://www.linkedin.com/in/bellekornberg" class="linkedinlogo"><img src="../images/logo-resized.png" alt="My LinkedIn Profile"></a><a href="https://www.linkedin.com/in/bellekornberg" class="linkedin">My LinkedIn Profile</a>
-           </p>
+            <br>
+            <br>
+            <br>
+            <a href="mailto:ijkornbe@syr.edu" class="email">Belle Kornberg Email</a><br>
+            <a href="https://www.linkedin.com/in/bellekornberg" class="linkedinlogo"><img src="../images/logo-resized.png" alt="LinkedInLogo" width="40"></a><a href="https://www.linkedin.com/in/bellekornberg" class="linkedin">My LinkedIn Profile</a>
        </div>
 
     </div>
-
+</article>
+<article>
     <div class="div2">
         <div class="form2">
             <h2>Contact Belle Kornberg</h2>
@@ -78,7 +86,7 @@
                     <label for="name"><strong>Enter Full Name:</strong></label>
                     <input type="text" id="name" name="fullname"><br>
                 <br>
-                    <p class="affil"><strong>What is your affiliation?</strong></p>
+                    <strong>What is your affiliation?</strong>
                     <input type="radio" id="friend1" name="affiliation" value="client" checked>
                     <label for="friend1">Friend</label>
             
@@ -99,14 +107,12 @@
             </div>
 
           
-        <div class="map">
-             <p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1523514154987!2d-76.1355620494741!3d43.03822589989456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca155555%3A0xc1c69e4f641652c1!2sSyracuse%20University%20School%20of%20Information%20Studies%20(iSchool)!5e0!3m2!1sen!2sus!4v1663088915712!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-        </p>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1523514154987!2d-76.1355620494741!3d43.03822589989456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca155555%3A0xc1c69e4f641652c1!2sSyracuse%20University%20School%20of%20Information%20Studies%20(iSchool)!5e0!3m2!1sen!2sus!4v1663088915712!5m2!1sen!2sus"  width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </div>
 
     </div>
-        
+</article>
     </body>
     </html>
     
