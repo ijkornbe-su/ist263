@@ -1,13 +1,13 @@
 a:visited {
-    color:#00196c;
+    color:#b807a6;
 }
 
 a:hover {
-    color:#3b0b69;
+    color:#6fa7bf;
 }
 
 a:link {
-    color: #971bdf;
+    color: #290340;
 }
 
 body{
@@ -17,14 +17,14 @@ body{
     
 }
 h1,h2 {
-    color: #750f5b;
+    color: #7a075e;
 }
 p{
     background-color:#f5ebf1;
     color:#0a2a38;
 }
 nav {
-    background-color: #d47fcf;
+    background-color: #e6aadf;
     padding: 10px;
     margin-bottom: 30px;
 }
@@ -32,7 +32,7 @@ nav a {
     color:#e7dded;
 }
 nav a:hover {
-    background-color:#dbcfe2;
+    background-color:#ac6fd1;
 }
 
 @media only screen and (max-width: 844px) 
