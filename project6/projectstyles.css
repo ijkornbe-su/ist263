@@ -1,0 +1,162 @@
+body{
+    background-color:#ffffff;
+    font-family:'Archivo Black', sans-serif;;
+    color: #000000; 
+    font-size: 1em;
+}
+nav {
+    background-color: #ce3375;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+}
+h1,h2,h3,h4 {
+font-family: 'Bebas Neue', sans-serif;
+}
+.ontherise, .styleguide {
+    font-size: 4em;
+}
+nav a{
+    color: #ffffff;
+    font-size: 1.5em;
+}
+nav a:hover {
+    color:#ff00ae;
+    background-color: #ffffff;
+}
+a:hover {
+    color:#000049;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1.25em;
+}
+#skip {
+    background-color:#a6a6a6;
+    border: 1px solid #000000;
+    padding: 2px;
+    position: absolute; /* out of page flow for layout*/
+    left: -999px;
+}
+#skip:focus {
+    left: 10px;
+}
+
+/* home page*/
+.tallboots, .cargo , .bomber {
+    display:flex;
+    padding:20px;
+    margin:20px;
+    border-radius: 2em;
+    border-color: #ce3375;
+    border-style: solid;
+    border-width: .5em;
+}
+.row1tall , .row1cargo, .row1bomber {
+    flex:3;
+}
+.row2tall, .row2cargo, .row2bomber {
+    flex:3;
+}
+.trends, .outfit {
+    text-align: center;
+}
+a {
+    color:#ce3375
+}
+h1, .sayless {
+    text-align: center;
+}
+.outfits, .outfitdescriptions{
+    display:flex;
+    flex:1;
+}
+.outfits{
+    flex:3;
+}
+.forclass, .foranightout,.fordatenight, .fortailgate{
+    text-align: center;
+    margin:40px;
+}
+.classoutfit, .nightoutfit, .dateoutfit, .tailgateoutfit {
+    margin:40px;
+    justify-content: center;
+}
+/* on the rise page*/
+.wgsn, .vogue, .wwd{
+    display:flex;
+    padding:20px;
+    margin:20px;
+    border-radius: 2em;
+}
+.row1wgsn, .row1vogue, .row1wwd {
+    flex:3;
+    padding:50px;
+}
+.row2wgsn, .row2vogue, .row2wwd {
+    flex:1;
+    padding:30px;
+}
+
+.influencerrow, .influencerinfo {
+    display:flex;
+}
+.undinfo, .giniinfo, .frankiesinfo {
+    flex:1;
+    padding:60px;
+    margin:40px;
+    text-align: center;
+}
+
+.und, .gini, .frankies {
+    flex:1;
+}
+
+.newpeople , .runway{
+    text-align: center;
+}
+img {
+    border-radius: 1em;
+}
+.fashresources, .runwaylife {
+    text-align: center;
+}
+.runwayshows, .modelvideos {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* about me */
+.contactphotos {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.wordmark {
+    margin:50px;
+}
+
+footer {
+    background-color:#ce3375;
+    text-align: center;
+}
+.mailto {
+    color:#ffffff
+}
+.socials {
+    display:flex;
+    justify-content: center;
+}
+form {
+    text-align: center;
+}
+.aboutme, .contactbelle {
+    text-align: center;
+}
