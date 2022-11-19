@@ -1,3 +1,21 @@
+@media only screen and (max-width: 844px) 
+{
+    nav a{
+        width: 100%;
+        display:block;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 844px) 
+{
+    span{
+        display:none;
+    }
+}
+.influencerrow, .influencerinfo, .contactphotos, .tallboots, .cargo,.bomber, .outfits,.outfitdescriptions {
+    flex-wrap:wrap;
+}
+
 body{
     background-color:#ffffff;
     font-family:'Archivo Black', sans-serif;;
@@ -21,7 +39,7 @@ nav a{
     font-size: 1.5em;
 }
 nav a:hover {
-    color:#2400b6;
+    color:#000049;
     background-color: #ffffff;
 }
 a:hover {
