@@ -88,9 +88,16 @@ a {
 h1, .sayless {
     text-align: center;
 }
+.letstalk {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+}
 #outfit-slideshow-container {
     width: 1200px;
-    margin: auto; /* margin auto is centering this container */        
+    margin: auto; /* margin auto is centering this container */   
+    padding: 30px;     
 }
 #bigimages {margin-right: 100px;}
 #outfitdescriptions {padding: 100px;}
@@ -101,9 +108,13 @@ h1, .sayless {
 #classoutfit, #tailgateoutfit, #nightoutoutfit, #classinfo, #tailgateinfo, #nightoutinfo {
     display:none;
 }
+#nightoutoutfit, #classinfo, #tailgateinfo, #nightoutinfo, #datenightinfo {
+    text-align: center;
+}
 #bigimages {
 float:left;
 }
+
 .clear {
 clear:both;
 }
