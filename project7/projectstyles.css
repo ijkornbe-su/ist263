@@ -17,30 +17,31 @@
 }
 
 body{
-    background-color:#ffffff;
-    font-family:'Archivo Black', sans-serif;;
-    color: #000000; 
+    background-color:#fcfbf4;
+    font-family:'News Cycle', sans-serif;
+    color: #000034; 
     font-size: 1em;
 }
 nav {
-    background-color: #ce3375;
-    text-align: center;
+    background-color: #000034;
+    text-align:center;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5em;
 }
 h1,h2,h3,h4 {
-font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bodoni Moda', serif;
 }
 .ontherise, .styleguide {
     font-size: 4em;
 }
 nav a{
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1em;
+    font-family:'Bodoni Moda', serif;
 }
 nav a:hover {
     color:#000049;
-    background-color: #ffffff;
+    background-color: #fcfbf4;
 }
 a:hover {
     color:#000049;
@@ -55,7 +56,8 @@ h4 {
     font-size: 1.25em;
 }
 #skip {
-    background-color:#a6a6a6;
+    background-color:#ce3375;
+    color:#000034;
     border: 1px solid #000000;
     padding: 2px;
     position: absolute; /* out of page flow for layout*/
@@ -70,10 +72,6 @@ h4 {
     display:flex;
     padding:20px;
     margin:20px;
-    border-radius: 2em;
-    border-color: #ce3375;
-    border-style: solid;
-    border-width: .5em;
 }
 .row1tall , .row1cargo, .row1bomber {
     flex:3;
@@ -90,20 +88,29 @@ a {
 h1, .sayless {
     text-align: center;
 }
-.outfits, .outfitdescriptions{
-    display:flex;
-    flex:1;
+#outfit-slideshow-container {
+    width: 1200px;
+    margin: auto; /* margin auto is centering this container */        
 }
-.outfits{
-    flex:3;
+#bigimages {margin-right: 100px;}
+#outfitdescriptions {padding: 100px;}
+#outfit-thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
+#classoutfitthumb, #tailgatethumb, #nightoutoutfitthumb, #datenightoutfitthumb 
+{width: 100px;}
+
+#classoutfit, #tailgateoutfit, #nightoutoutfit, #classinfo, #tailgateinfo, #nightoutinfo {
+    display:none;
 }
-.forclass, .foranightout,.fordatenight, .fortailgate{
-    text-align: center;
-    margin:40px;
+#bigimages {
+float:left;
 }
-.classoutfit, .nightoutfit, .dateoutfit, .tailgateoutfit {
-    margin:40px;
-    justify-content: center;
+.clear {
+clear:both;
+}
+.weblogodiv {
+    display:grid;
+    place-items: center;
+    padding: 20px;
 }
 /* on the rise page*/
 .wgsn, .vogue, .wwd{
@@ -151,10 +158,9 @@ img {
 
 
 /* about me */
-.contactphotos {
-    display: flex;
-    padding: 40px;
-    justify-content: center;
+.myphoto {
+    display: grid;
+    place-items: center;
 }
 
 .wordmark {
@@ -162,7 +168,7 @@ img {
 }
 
 footer {
-    background-color:#ce3375;
+    background-color:#000034;
     text-align: center;
 }
 .mailto {
@@ -171,6 +177,7 @@ footer {
 .socials {
     display:flex;
     justify-content: center;
+    padding:20px;
 }
 form {
     text-align: center;

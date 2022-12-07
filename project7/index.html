@@ -5,20 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="../project6/projectstyles.css">
+    <link rel="stylesheet" href="../project7/projectstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="https://ijkornbe-su.github.io/ist263/proj6images/favicon.ico">
+    
+<script>
+        function OutfitsOff () {
+       document.getElementById('classoutfit').style.display = 'none';
+       document.getElementById('tailgateoutfit').style.display = 'none';
+       document.getElementById('nightoutoutfit').style.display = 'none';
+       document.getElementById('datenightoutfit').style.display = 'none';
+       document.getElementById('classinfo').style.display = 'none';
+       document.getElementById('tailgateinfo').style.display = 'none';
+       document.getElementById('nightoutinfo').style.display = 'none';
+       document.getElementById('datenightinfo').style.display = 'none';
+    }
+       
+       function ClassOn () {
+        document.getElementById('classoutfit').style.display = 'block';
+        document.getElementById('classinfo').style.display = 'block';
+       }
+       function TailgateOn () {
+        document.getElementById('tailgateoutfit').style.display = 'block';
+        document.getElementById('tailgateinfo').style.display = 'block';
+       }
+       function NightoutOn () {
+        document.getElementById('nightoutoutfit').style.display = 'block';
+        document.getElementById('nightoutinfo').style.display = 'block';
+       }
+       function DatenightOn () {
+        document.getElementById('datenightoutfit').style.display = 'block';
+        document.getElementById('datenightinfo').style.display = 'block';
+       }
+    </script>
 </head>
 <body>
     <a id="skip" tabindex="1" href="#content">Skip to Content</a>
+    <div class="weblogodiv">
+<img src="../proj6images/mylifeisbelle-logo.png" alt="mylifeisbellelogo">
+</div>
 
     <nav>
-        <a href="https://ijkornbe-su.github.io/ist263/project6/home.html">Home<span>|</span></a>
-        <a href="https://ijkornbe-su.github.io/ist263/project6/ontherise.html">On The Rise<span>|</span></a>
-        <a href="https://ijkornbe-su.github.io/ist263/project6/aboutme.html">About Me</a>
+        <a href="https://ijkornbe-su.github.io/ist263/project7/index.html">Home<span> |</span></a>
+        <a href="https://ijkornbe-su.github.io/ist263/project7/ontherise.html">On The Rise<span> |</span></a>
+        <a href="https://ijkornbe-su.github.io/ist263/project7/aboutme.html">About Me</a>
     </nav>
     <article>
     <section>
     <h1 class="styleguide">Style Guide</h1>
-    <hr   id="content">
+    <hr id="content">
     <h2 class="trends">Trends You Should Know </h2>
   
 <div class="tallboots">
@@ -90,15 +129,16 @@
 <p>Let's talk about college fall fashion. Afterall, it is not Milan Fashion Week, but many people (including myself) like to dress to impress. Below you will find some of my favorite staples for class and a night out, or for a date night with someone you love.
 </p>
 
-<div class="outfits">
-    <div class="classoutfit"><img src="../proj6images/class-outfit.jpg" alt="photoofbelleinaclass-outfit" height="300"></div>
-    <div class="tailgateoutfit"><img src="../proj6images/tailgate.jpg" alt="photoofbelleinatailgate-outfit" height="300"></div>
-    <div class="nightoutfit"><img src="../proj6images/night-out.jpg" alt="photoofbelleinanight-out" height="300"></div>
-    <div class="dateoutfit"><img src="../projectimages/london-outfit.jpeg" alt="photoofbelleindatenight-outfit" height="300"></div>
+<div id="outfit-slideshow-container">
+    <div id="bigimages">
+    <img src="../proj6images/class-outfit.jpg" alt="photoofbelleinaclass-outfit" id="classoutfit" height="600" onclick="OutfitsOff();">
+    <img src="../proj6images/tailgate.jpg" alt="photoofbelleinatailgate-outfit" id="tailgateoutfit" height="600" onclick="OutfitsOff();">
+    <img src="../proj6images/night-out.jpg" alt="photoofbelleinanight-out" height="600" id="nightoutoutfit" onclick="OutfitsOff();">
+    <img src="../projectimages/london-outfit.jpeg" alt="photoofbelleindatenight-outfit" id="datenightoutfit" height="600" onclick="OutfitsOff();">
 </div>
 
-<div class="outfitdescriptions">
-    <div class="forclass">
+<div id="outfitdescriptions">
+    <div id="classinfo">
         <h3>For Class</h3>
         <p>
             Starting off casual: you roll out of bed and crave an iced latte from Starbucks. What do you wear? In my eyes, this could go one of two ways. You could either get a coffee and go to the library to do some work, or you can go back to bed (really just depends on the day, right?) Above is an outfit which has you looking chic and ready for your day. All items linked below. <br>
@@ -109,7 +149,7 @@
         </p>
     </div>
 
-    <div class="fortailgate">
+    <div id="tailgateinfo">
         <h3>For a Tailgate</h3>
         <p>
             Go beyond the school bookstore and spice up your tailgate outfit with something unique. You don't need to weari your school's merch to represent the team! These basketball shorts will have you ready for a workout, a casual lunch, or for a football game! They're the perfect way to be the coolest girl at the game and remain simple yet chic all at the same time. <br>
@@ -121,7 +161,7 @@
         </p>
     </div>
 
-    <div class="foranightout"><h3>For a Night Out</h3>
+    <div id="nightoutinfo"><h3>For a Night Out</h3>
         <p>
         In my opinion, there's no better feeling that being comfortable and feeling <strong>confident</strong>. Here I am wearing a simple black dress that is not too dressy but not too casual for a night out on the town. Throw this on with a pair of sneakers and you'll be sure to have a great night. Accesorize it with some fun jewlery and you'll be on your way! All items linked below <br>
     <a href="https://frankiesbikinis.com/products/america-shine-halter-dress-black?_pos=66&_sid=f8d0e44d7&_ss=r">Dress</a><br>
@@ -129,7 +169,7 @@
     <a href="https://www.amazon.com/Shoulder-Elegant-Feminine-Handbags-Closure/dp/B0881KTXNJ/ref=sr_1_16?c=ts&keywords=Women%27s+Shoulder+Handbags&qid=1667245891&qu=eyJxc2MiOiIxMS4zMSIsInFzYSI6IjEwLjc3IiwicXNwIjoiOS4xOSJ9&refinements=p_n_material_browse%3A17037744011&s=apparel&sr=1-16&ts_id=3421075011">Bag</a><br>
     </p>
 </div>
-    <div class="fordatenight">
+    <div id="datenightinfo">
         <h3>For Date Night</h3>
         <p> Whether it's a first date or you've been dating for a while, it's time to dress up for the one you love! Above is a casual outfit, easy to pair with fun accesories and perfect for any restaurant, concert, or musical. The leather blazer will keep you warm in the cold weather and will have all eyes on you. We're all our own celebrities afterall! Linked below are the pieces from the photo above. <br>
      <a href="https://miaou.com/products/mini-tee-black-monogram?currency=USD&variant=40065288634547&gclid=CjwKCAjw5P2aBhAlEiwAAdY7dKJACjwbP4XSvbJLBxjvr5B8ew7ctOWaqEtpPILWILlNRGOXC36ltxoCdYYQAvD_BwE">Top</a><br>
@@ -138,6 +178,14 @@
      <a href="https://www.stevemadden.com/products/roxie-black-leather">Shoes</a><br>
         </p>
     </div>
+</div>
+<div class="clear"></div>
+
+<div id="outfit-thumbnails">
+    <img src="../proj6images/class-outfit.jpg" alt="photoofbelleinaclass-outfit" id="classoutfitthumb" height="100" onclick="OutfitsOff(); ClassOn();">
+    <img src="../proj6images/tailgate.jpg" alt="photoofbelleinatailgate-outfit" id="tailgateoutfitthumb" height="100" onclick="OutfitsOff(); TailgateOn();">
+    <img src="../proj6images/night-out.jpg" alt="photoofbelleinanight-out" id="nightoutoutfitthumb" height="100" onclick="OutfitsOff(); NightoutOn();">
+    <img src="../projectimages/london-outfit.jpeg" alt="photoofbelleindatenight-outfit" id="datenightoutfitthumb" height="100" onclick="OutfitsOff(); DatenightOn();">
 </div>
 </section>
 </article>
