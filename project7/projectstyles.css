@@ -169,6 +169,11 @@ img {
 
 
 /* about me */
+.aboutmelogo {
+    display: grid;
+    place-items: center;
+    padding: 30px;
+}
 .myphoto {
     display: grid;
     place-items: center;
