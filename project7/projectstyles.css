@@ -239,7 +239,6 @@ h1, .sayless {
 #outfit-thumbnails {width: 840px; margin: auto; padding-top: 20px;} 
 #classoutfitthumb, #tailgatethumb, #nightoutoutfitthumb, #datenightoutfitthumb 
 {width: 100px;}
-
 #classoutfit, #tailgateoutfit, #nightoutoutfit, #classinfo, #tailgateinfo, #nightoutinfo {
     display:none;
 }
