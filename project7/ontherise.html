@@ -12,19 +12,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="https://ijkornbe-su.github.io/ist263/projimages/favicon.ico">
+    <script>
+        function belleFunction() {
+          document.getElementById("belleDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(belleFunction) {
+          if (!e.target.matches('.belledropdownbutton')) {
+          var myDropdown = document.getElementById("belleDropdown");
+            if (belleDropdown.classList.contains('show')) {
+              belleDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
 </head>
 <body>
     <a id="skip" tabindex="1" href="#content">Skip to Content</a>
     <div class="weblogodiv">
         <img src="https://ijkornbe-su.github.io/ist263/projimages/mylifeisbelle-logo.png" alt="mylifeisbellelogo">
         </div>
-    <nav>
-        <a href="https://ijkornbe-su.github.io/ist263/project7/index.html">Home<span> |</span></a>
-        <a href="https://ijkornbe-su.github.io/ist263/project7/ontherise.html">On The Rise<span> |</span></a>
-        <a href="https://ijkornbe-su.github.io/ist263/project7/aboutme.html">About Me</a>
-    </nav>
+        <div class="navbar">
+            <a href="https://ijkornbe-su.github.io/ist263/project7/index.html">Home</a>
+            <a href="https://ijkornbe-su.github.io/ist263/project7/ontherise.html">On The Rise</a>
+            <div class="belledropdown">
+            <button class="belledropdownbutton" onclick="belleFunction()" id="bellenavhover">About
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="belledropdown-content" id="belleDropdown">
+              <a href="https://ijkornbe-su.github.io/ist263/project7/aboutme.html">About</a>
+              <a href="https://ijkornbe-su.github.io/ist263/project7/contact.html">Contact</a>
+            </div>
+            </div> 
+          </div>
 
-  
     <article>
         <h1 class="ontherise">On The Rise</h1>
         <section>
@@ -39,72 +60,67 @@
         <br>
         Don't worry, I have you covered!
     </p>
+<section>
+    <div class="socialmedia">
+        <div class="und">
+        <a href="https://www.instagram.com/upnextdesigner/"><img src="https://ijkornbe-su.github.io/ist263/projimages/und.png" alt="photoofupnextdesigner"></a><br>
+            <h3><a href="https://www.instagram.com/upnextdesigner/">@upnextdesigner</a></h3>
+            <p class="undcontent">Albert Ayal, a fashion publicist, started this account many years ago in hopes of bringing attention to designers who were yet to be discovered. He shares runway looks from shows and interacts with his followers which makes them feel like he is there for them. Not only does he post brands, but he posts job listings for people who need help and helps his followers find internships in the fashion industry. He has now grown his platform to 232k followers and has completed many goals of his which he shared when he was first starting out. <a href="https://wwd.com/fashion-news/fashion-scoops/up-next-designer-instagram-what-to-know-1234892669/">Here</a> is an article where you can read more about him and his story!</p>
+        </div>
+    
+            <div class="gini">
+                <a href="https://www.instagram.com/ginimisselbrook/"><img src="https://ijkornbe-su.github.io/ist263/projimages/gini.png" alt="photoofginimisselbrook"></a><br>
+                    <h3><a href="https://www.instagram.com/ginimisselbrook/">@ginimisselbrook</a></h3>
+                <p class="ginicontent">Gini is a stylist and the creative content manager and social media manager at Jaded LDN, an up and coming fashion brand. She is an influencer who many may not know, but I can guarantee that she will be huge. Her sense of fashion, creativity and character are like no other. She seems to be her most authentic self and provides me with new ways to put outfits together daily. Check out her instagram for amazing outfit inspiration and to follow her along in her everyday life.</p>
+            </div>
+            
+            <div class="frankies">
+                    <a href="https://instagram.com/francescaaiello/"> <img src="https://ijkornbe-su.github.io/ist263/projimages/frankies.png" alt="photooffrancescaaiello"></a><br>
+                <h3><a href="https://instagram.com/francescaaiello/">@francescaaiello</a></h3>
+                <p class="frankiescontent">As the Founder and CEO of Frankie's Bikinis, Francesca has definitely made her
+                    mark not only in the swimsuit industry, but the fashion industry too. Aiello started this brand at the age of 15 years old, and has now risen to the top with Victoria's Secret taking an $18 million stake in it. She is the true definition of a girl-boss. For more on Frankies Bikinis and Victoria's Secret, read the article <a href="https://ww.fashionnetwork.com/news/Victoria-s-secret-takes-a-stake-in-frankies-bikinis,1391447.html">here</a>.</p>
+            </div>
+        </div>
 
-<div class="influencerrow">
-    <div class="und">
-    <a href="https://www.instagram.com/upnextdesigner/"><img src="https://ijkornbe-su.github.io/ist263/projimages/und.png" alt="photoofupnextdesigner"></a><br>
-    </div>
-    <div class="gini">
-    <a href="https://www.instagram.com/ginimisselbrook/"><img src="https://ijkornbe-su.github.io/ist263/projimages/gini.png" alt="photoofginimisselbrook"></a><br>
-    </div>
-    <div class="frankies">
-    <a href="https://instagram.com/francescaaiello/"> <img src="https://ijkornbe-su.github.io/ist263/projimages/frankies.png" alt="photooffrancescaaiello"></a><br>
-    </div>
-</div>
-
-<div class="influencerinfo">
-    <div class="undinfo">
-    <h3><a href="https://www.instagram.com/upnextdesigner/">@upnextdesigner</a></h3>
-    <p>Albert Ayal, a fashion publicist, started this account many years ago in hopes of bringing attention to designers who were yet to be discovered. He shares runway looks from shows and interacts with his followers which makes them feel like he is there for them. Not only does he post brands, but he posts job listings for people who need help and helps his followers find internships in the fashion industry. He has now grown his platform to 221k followers and has completed many goals of his which he shared when he was first starting out. <a href="https://wwd.com/fashion-news/fashion-scoops/up-next-designer-instagram-what-to-know-1234892669/">Here</a> is an article where you can read more about him and his story!</p>
-    </div>
-
-    <div class="giniinfo">
-        <h3><a href="https://www.instagram.com/ginimisselbrook/">@ginimisselbrook</a></h3>
-    <p>Gini is the creative content manager and a stylist at Jaded LDN, an up and coming fashion brand. She is an influencer who many may not know, but has the potential to be huge. Her sense of fashion, creativity and character are like no other. She seems to be her most authentic self and provides me with new ways to put outfits together daily.</p>
-    </div>
-
-    <div class="frankiesinfo">
-    <h3><a href="https://instagram.com/francescaaiello/">@francescaaiello</a></h3>
-    <p>As the Founder and CEO of Frankie's Bikinis, Francesca has definitely made her
-        mark not only in the swimsuit industry, but the fashion industry too. Aiello started this brand at the age of 15 years old, and has now risen to the top with Victoria's Secret taking an $18 million stake in it. She is the true definition of a girl-boss. For more on Frankies Bikinis and Victoria's Secret, read the article <a href="https://ww.fashionnetwork.com/news/Victoria-s-secret-takes-a-stake-in-frankies-bikinis,1391447.html">here</a>.</p>
-    </div>
-</div>
 </section>
+
    <hr>
 <section>
         <h2 class="fashresources">Fashion Resources</h2>
         <div class="wgsn">
             <div class="row1wgsn">
+                <h3>WGSN</h3>
         <p><a href="https://wgsn.com">WGSN</a> is an exclusive site which is focused on trend forecasting. Here you can
                 find trend predictions for seasons up to 2024 (crazy, right?). For someone who wants to get involved in the fashion industry or who wants some more knowledge of it, this site is essentially your fashion bible. The information is backed up with data and it holds countless pieces of content. It could take you a year to fully dive into all of the statistics. Above is an exciting promotional video from their YouTube. Be sure to check out their other videos!
             </p>
             </div>
             <div class="row2wgsn">
-                <iframe src="https://www.youtube.com/embed/wBbtpt3idxE?start=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/wBbtpt3idxE?start=1" title="YouTube video player" height=340px width=560px allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
         </div>
 
         <div class="vogue">
             <div class="row1vogue">
+                <h3>Vogue Runway</h3>
                 <p><a href="https://www.vogue.com/fashion-shows">Vogue Runway</a> works hard to update their information as soon as something in the
                     world of fashion happens. Especially during any Fashion Week, this site is your source to everything you need. There are deep reviews of any shows, new releases, or designers. It is a comprehensive guide to fashion and beauty. You can search by the designer or by season to see any look from any show that you want to engage with.
                 </p>
                 </div>
-
             <div class="row2vogue">
-            <iframe src="https://www.vogue.com/fashion-shows" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.vogue.com/fashion-shows" style="border:0;"  loading="lazy" height=340px width=560px referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         
         <div class="wwd">
             <div class="row1wwd">
+                <h3>WWD</h3>
             <p>Contrary to WGSN, <a href="https://wwd.com">Women's Wear Daily</a> is a site that is open to all: no
                 membership or login required. If desired, you can subscribe and pay a yearly amount, however there are plenty of articles available for free. WWD is essentially your news network for fashion. They post breaking news in the industry, constant updates, and reviews. If you are interested in getting more
                 involved with the day-to-day updates and trends, this will be your main source of knowledge. Above is a video from their YouTube which captures Tommy Hilfiger's "Homecoming Spectacular"
             </p>
         </div>
         <div class="row2wwd">
-            <iframe src="https://www.youtube.com/embed/8DoYKCimUnw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/8DoYKCimUnw" title="YouTube video player"  height=340px width=560px allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -113,22 +129,24 @@
             <p class="runwaylife"><strong>Always wanted to know what it's like to model? Watch the videos below to see an insight on their daily lives!</strong></p>
         <div class="modelvideos">
         <div class="row1modelvideos">
-            <iframe src="https://www.youtube.com/embed/bXwoQD3NOr8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/bXwoQD3NOr8"  height=340px width=560px title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="row2modelvideos">
-            <iframe  src="https://www.youtube.com/embed/OjgqHrh8tMs?start=8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe  src="https://www.youtube.com/embed/OjgqHrh8tMs?start=8"  height=340px width=560px title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         </div>
 <p class="runway"><strong>Below are two of my favorite shows from the most recent runway season</strong></p>
 <div class="runwayshows">
     <div class="runwayrow1">
-<iframe  src="https://www.youtube.com/embed/xZ2tCTuJI5E?start=6" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/xZ2tCTuJI5E?start=6" title="YouTube video player"  height=340px width=560px height=auto allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="runwayrow2">
-<iframe  src="https://www.youtube.com/embed/hoKDrFyQDy0?start=4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/hoKDrFyQDy0?start=4" title="YouTube video player"  height=340px width=560px allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+<hr>
+<a href="mailto:ikornberg6@gmail.com" class="mailto" id="bellekornberg">Belle Kornberg</a> &copy; 2022
 </section>
 </article>
 </body>

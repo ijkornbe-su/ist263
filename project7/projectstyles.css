@@ -1,19 +1,146 @@
 @media only screen and (max-width: 844px) 
 {
-    nav a{
+    .navbar a{
         width: 100%;
         display:block;
         padding: 10px;
     }
-}
+    div {flex-wrap: wrap;}
+    img {
+        max-width: 100%;
+    }
+    iframe {
+            max-width: 100%;
+        }
+    }
+    .outfitdescriptions {flex-wrap: wrap;}
+
 @media only screen and (max-width: 844px) 
 {
     span{
         display:none;
     }
 }
-.influencerrow, .influencerinfo, .contactphotos, .tallboots, .cargo,.bomber, .outfits,.outfitdescriptions {
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color:#000034;
+    font-family: 'Bodoni Moda', sans-serif;
+    justify-content:center;
+    display: flex;
+  }
+  #bellenavhover :hover {
+    background-color: #dddddd;
+  }
+  .navbar a {
+    font-size: 1.5em;
+    color:#fcfbf4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  
+  .belledropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .belledropdown .belledropdownbutton {
+    cursor: pointer;
+    font-size: 1.5em;  
+    border: none;
+    outline: none;
+    color: #fcfbf4;
+    background-color: #000034;
+    padding: 14px 16px;
+    font-family: 'Bodoni Moda', sans-serif;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .belledropdownbutton, .dropbtn:focus {
+    background-color:#dddddd;
+  }
+
+  .dropdownbutton {
+    background-color: #000034;
+    color: #fcfbf4;
+    font-family:'Bodoni Moda', sans-serif ;
+  }
+  .belledropdown-content {
+    display:none;
+    position: absolute;
+    background-color:#000034;
+    color: #fcfbf4;
+    min-width: 160px;
+  }
+  
+  .belledropdownbutton :hover{
+background-color: #dddddd;
+  }
+  .belledropdown-content a {
+    float: none;
+    font-size: 1em;
+    color:#fcfbf4;
+    text-decoration: none;
+    display: block;
+    text-align:center;
+    padding: none;
+  }
+  
+  .belledropdown-content a:hover {
+    background-color: #dddddd;
+  }
+  
+  .show {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactphotos, .tallboots, .cargo,.bomber, .outfits,.outfitdescriptions, .wgsn, .vogue, .wwd, .runwayshows, .modelvideos {
     flex-wrap:wrap;
+}
+#bellekornberg {
+    color:#000034;
+}
+
+::-webkit-scrollbar {
+    background-color: #000034;
+    width:5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ce3375;
+  height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+.talk {
+    background-color: #000034;
+    color:#fcfbf4;
+    font-family:'Bodoni Moda', serif;
 }
 
 body{
@@ -56,12 +183,13 @@ h4 {
     font-size: 1.25em;
 }
 #skip {
-    background-color:#ce3375;
-    color:#000034;
+    background-color:#000034;
+    color: #fcfbf4;
     border: 1px solid #000000;
     padding: 2px;
     position: absolute; /* out of page flow for layout*/
     left: -999px;
+    font-family: 'Bodoni Moda', serif;
 }
 #skip:focus {
     left: 10px;
@@ -73,6 +201,13 @@ h4 {
     padding:20px;
     margin:20px;
 }
+.advice {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Bodoni Moda', serif;
+}
+
+
 .row1tall , .row1cargo, .row1bomber {
     flex:3;
 }
@@ -83,7 +218,7 @@ h4 {
     text-align: center;
 }
 a {
-    color:#ce3375
+    color:#ce3375;
 }
 h1, .sayless {
     text-align: center;
@@ -114,7 +249,6 @@ h1, .sayless {
 #bigimages {
 float:left;
 }
-
 .clear {
 clear:both;
 }
@@ -133,26 +267,28 @@ clear:both;
 .row1wgsn, .row1vogue, .row1wwd {
     flex:3;
     padding:50px;
+    margin: 50px;
+    text-align: center;
 }
 .row2wgsn, .row2vogue, .row2wwd {
     flex:1;
     padding:30px;
 }
 
-.influencerrow, .influencerinfo {
+.socialmedia{
     display:flex;
-}
-.undinfo, .giniinfo, .frankiesinfo {
-    flex:1;
-    padding:60px;
-    margin:40px;
     text-align: center;
+    justify-content: center;
 }
-
-.und, .gini, .frankies {
+.und {
     flex:1;
 }
-
+.frankies {
+    flex:3;
+}
+.undcontent , .ginicontent , .frankiescontent {
+    padding: 50px;
+}
 .newpeople , .runway{
     text-align: center;
 }
@@ -166,15 +302,17 @@ img {
     display: flex;
     justify-content: center;
 }
-
+.runwayshows {
+    padding-bottom: 30px;
+}
 
 /* about me */
 .aboutmelogo {
     display: grid;
     place-items: center;
-    padding: 30px;
+    padding: 40px;
 }
-.myphoto {
+#myphoto {
     display: grid;
     place-items: center;
 }
@@ -193,11 +331,25 @@ footer {
 .socials {
     display:flex;
     justify-content: center;
-    padding:20px;
+    padding:30px;
 }
 form {
     text-align: center;
 }
-.aboutme, .contactbelle {
+.aboutme, .contactbelle, .favlooks {
     text-align: center;
+}
+
+.linkedin, .instagram {
+    padding:5px;
+}
+.thankyou {
+    text-align: center;
+    font-size: 1.15em;
+    background-color: #000034;
+    color:#fcfbf4;
+}
+.aboutmecontent {
+    text-align: center;
+    margin:60px;
 }
