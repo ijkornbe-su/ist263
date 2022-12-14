@@ -5,12 +5,15 @@
         display:block;
         padding: 10px;
     }
+    .bomber, .cargo,.tallboots {
+        width: 390px;
+    }
     div {flex-wrap: wrap;}
     iframe {
             max-width: 100%;
         }
     }
-    .outfitdescriptions {flex-wrap: wrap;}
+    .outfitdescriptions {max-width: fit-content;}
 
 @media only screen and (max-width: 844px) 
 {
@@ -96,23 +99,6 @@ background-color: #dddddd;
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contactphotos, .tallboots, .cargo,.bomber, .outfits,.outfitdescriptions, .wgsn, .vogue, .wwd, .runwayshows, .modelvideos {
     flex-wrap:wrap;
 }
@@ -134,11 +120,6 @@ background-color: #dddddd;
     border-radius: 10px;
   }
 
-.talk {
-    background-color: #000034;
-    color:#fcfbf4;
-    font-family:'Bodoni Moda', serif;
-}
 
 body{
     background-color:#fcfbf4;
@@ -189,7 +170,7 @@ h4 {
     font-family: 'Bodoni Moda', serif;
 }
 #skip:focus {
-    left: 10px;
+    left: 20px;
 }
 
 /* home page*/
